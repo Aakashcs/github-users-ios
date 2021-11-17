@@ -72,6 +72,7 @@ class UsersViewController: UITableViewController, Storyboarded {
             removeTableViewLoadingFooter()
             setIsRefreshing(false)
             showNoInternetView()
+            ReachabilityManager.shared.startObserver()
             return
         }
         
@@ -112,7 +113,6 @@ class UsersViewController: UITableViewController, Storyboarded {
             self.users.append(contentsOf: users)
             tableView.reloadData()
         }
-        
         if let last = users.last {
             lastSeenId = last.id
             print(last.id)
@@ -221,7 +221,7 @@ extension UsersViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        coordinator?.showProfile(of: users[indexPath.row])
+        coordinator?.showProfile(of: filteredApplied ? filteredUsers[indexPath.row] : users[indexPath.row])
     }
     
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

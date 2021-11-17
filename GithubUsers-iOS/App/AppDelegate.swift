@@ -17,7 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         /// Enable auto keyboard managing
         configureIQKeyboardManager()
-        ReachabilityManager.shared.startObserver()
         return true
     }
     

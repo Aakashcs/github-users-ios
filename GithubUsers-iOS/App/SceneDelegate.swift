@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneWillEnterForeground(_ scene: UIScene) {
-        ReachabilityManager.shared.startObserver()
+   
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

@@ -348,7 +348,7 @@
 		38706113273FF7AE00025D49 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38D8184C2745688D00BBF2BB /* New Group */,
+				38D8184C2745688D00BBF2BB /* Profile */,
 				384BF6FB2742F52F00BBF29B /* UserList */,
 			);
 			path = Controllers;
@@ -394,12 +394,12 @@
 			path = Cordinator;
 			sourceTree = "<group>";
 		};
-		38D8184C2745688D00BBF2BB /* New Group */ = {
+		38D8184C2745688D00BBF2BB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				38D8184D274568A000BBF2BB /* ProfileViewController.swift */,
 			);
-			path = "New Group";
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		41E74536D25DBF0183CDC5EC /* Frameworks */ = {
